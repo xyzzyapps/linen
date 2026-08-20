@@ -13,7 +13,7 @@ func main() {
 	dryRun := flag.Bool("n", false, "print tangled files to stdout instead of writing")
 	verbose := flag.Bool("v", false, "print extraction matrix and written paths")
 	flag.Usage = func() {
-		fmt.Fprintf(os.Stderr, `linum — literate programming with line-number labels
+		fmt.Fprintf(os.Stderr, `linen — literate programming with line-number labels
 
 Read a Markdown narrative whose code is tagged as [file:N], sort fragments
 by N within each file, and emit the assembled sources.
@@ -22,7 +22,7 @@ by N within each file, and emit the assembled sources.
   `+"```python [app.py:50]"+`           labelled fence
 
 Usage:
-  linum [flags] <document.md>
+  linen [flags] <document.md>
 
 Flags:
 `)
@@ -103,6 +103,6 @@ func hasTrailingNL(s string) bool {
 }
 
 func fatal(err error) {
-	fmt.Fprintf(os.Stderr, "linum: %v\n", err)
+	fmt.Fprintf(os.Stderr, "linen: %v\n", err)
 	os.Exit(1)
 }

@@ -1,8 +1,8 @@
-# linum
+# linen
 
 Literate programming with line-number labels.
 
-The name is from *line number* and Latin *linum* (flax — the fiber you weave). The Markdown narrative is the weft; numeric labels are the warp. You write code in story order. **linum** extracts every labelled fragment, groups by target file, sorts by label, and emits real source files.
+The name is the cloth you weave from flax, and a nod to *line* numbers. The Markdown narrative is the weft; numeric labels are the warp. You write code in story order. **linen** extracts every labelled fragment, groups by target file, sorts by label, and emits real source files.
 
 ## Syntax
 
@@ -37,19 +37,19 @@ Duplicate labels in the same file are an error. An unclosed labelled fence is an
 ## Install
 
 ```text
-go install github.com/manic/linum@latest
+go install github.com/manic/linen@latest
 ```
 
 Or from this repo:
 
 ```text
-go build -o linum .
+go build -o linen .
 ```
 
 ## Usage
 
 ```text
-linum [flags] <document.md>
+linen [flags] <document.md>
 ```
 
 | Flag | Meaning |
@@ -61,9 +61,9 @@ linum [flags] <document.md>
 Examples:
 
 ```text
-linum examples/explainer.md
-linum -o out examples/explainer.md
-linum -n -v examples/explainer.md
+linen examples/explainer.md
+linen -o out examples/explainer.md
+linen -n -v examples/explainer.md
 ```
 
 ## Example

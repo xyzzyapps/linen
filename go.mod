@@ -1,3 +1,3 @@
-module github.com/manic/linum
+module github.com/manic/linen
 
 go 1.22
