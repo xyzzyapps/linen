@@ -4,7 +4,8 @@
 
 Literate programming with line-number labels.
 
-The name is the cloth you weave from flax, and a nod to *line* numbers. The Markdown narrative is the weft; numeric labels are the warp. You write code in story order. **linen** extracts every labelled fragment, groups by target file, sorts by label, and emits real source files.
+Use labels like `[app.py:50]` on inline code or code blocks to create source code from markdown - weaving.
+You write code in story order. **linen** extracts every labelled fragment, groups by target file, sorts by label, and emits real source files.
 
 ## Syntax
 
