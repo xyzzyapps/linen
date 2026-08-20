@@ -1,5 +1,7 @@
 # linen
 
+[![Built with Grok](https://img.shields.io/badge/Built_with-Grok-000000?style=flat&logo=xai&logoColor=white)](https://grok.com)
+
 Literate programming with line-number labels.
 
 The name is the cloth you weave from flax, and a nod to *line* numbers. The Markdown narrative is the weft; numeric labels are the warp. You write code in story order. **linen** extracts every labelled fragment, groups by target file, sorts by label, and emits real source files.
